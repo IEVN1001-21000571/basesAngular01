@@ -1,0 +1,104 @@
+<div>
+    <div class="col-12 col-md-12 col-lg-6">
+        <div class="text-center">
+            <h3>CALCULADORA DE RESISTENCIAS</h3>
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="col-4">
+                <h4>1ra. Banda:</h4>
+                <div class="band-control-group">
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="0"><span class="color-label-control" style="background-color: black;">Negro (0)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="1"><span class="color-label-control" style="background-color: brown;">Café (1)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="2"><span class="color-label-control" style="background-color: red;">Rojo (2)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="3"><span class="color-label-control black-text" style="background-color: orange;">Naranja (3)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="4"><span class="color-label-control black-text" style="background-color: yellow;">Amarillo (4)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="5"><span class="color-label-control" style="background-color: green;">Verde (5)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="6"><span class="color-label-control" style="background-color: blue;">Azul (6)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="7"><span class="color-label-control" style="background-color: purple;">Morado (7)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="8"><span class="color-label-control" style="background-color: gray;">Gris (8)</span></div>
+                    <div class="band-option"><input type="radio" name="banda1" [(ngModel)]="banda1" value="9"><span class="color-label-control black-text" style="background-color: white;">Blanco (9)</span></div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <h4>2da. Banda:</h4>
+                <div class="band-control-group">
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="0"><span class="color-label-control" style="background-color: black;">Negro (0)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="1"><span class="color-label-control" style="background-color: brown;">Café (1)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="2"><span class="color-label-control" style="background-color: red;">Rojo (2)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="3"><span class="color-label-control black-text" style="background-color: orange;">Naranja (3)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="4"><span class="color-label-control black-text" style="background-color: yellow;">Amarillo (4)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="5"><span class="color-label-control" style="background-color: green;">Verde (5)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="6"><span class="color-label-control" style="background-color: blue;">Azul (6)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="7"><span class="color-label-control" style="background-color: purple;">Morado (7)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="8"><span class="color-label-control" style="background-color: gray;">Gris (8)</span></div>
+                    <div class="band-option"><input type="radio" name="banda2" [(ngModel)]="banda2" value="9"><span class="color-label-control black-text" style="background-color: white;">Blanco (9)</span></div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <h4>Multiplicador:</h4>
+                <div class="band-control-group">
+                    <div class="band-option"><input type="radio" name="bandaMulti" [(ngModel)]="bandaMulti" value="1"><span class="color-label-control" style="background-color: black;">x1</span></div>
+                    <div class="band-option"><input type="radio" name="bandaMulti" [(ngModel)]="bandaMulti" value="10"><span class="color-label-control" style="background-color: brown;">x10</span></div>
+                    <div class="band-option"><input type="radio" name="bandaMulti" [(ngModel)]="bandaMulti" value="100"><span class="color-label-control" style="background-color: red;">x100</span></div>
+                    <div class="band-option"><input type="radio" name="bandaMulti" [(ngModel)]="bandaMulti" value="1000"><span class="color-label-control black-text" style="background-color: orange;">x1000</span></div>
+                    <div class="band-option"><input type="radio" name="bandaMulti" [(ngModel)]="bandaMulti" value="10000"><span class="color-label-control black-text" style="background-color: yellow;">x10000</span></div>
+                    <div class="band-option"><input type="radio" name="bandaMulti" [(ngModel)]="bandaMulti" value="100000"><span class="color-label-control" style="background-color: green;">x100000</span></div>
+                    <div class="band-option"><input type="radio" name="bandaMulti" [(ngModel)]="bandaMulti" value="1000000"><span class="color-label-control" style="background-color: blue;">Azul x1000000</span></div>
+                    </div>
+            </div>
+
+            <div class="col-12">
+                <h4 class="mt-2">Tolerancia:</h4>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="tolerance-radio-option">
+                        <input type="radio" name="bandaTolerancia" [(ngModel)]="bandaTolerancia" value="0.05" id="tol_oro">
+                        <label for="tol_oro" class="color-label-control black-text" style="background-color: goldenrod; margin-left: 5px;">Oro 5%</label>
+                    </div>
+                    <div class="tolerance-radio-option">
+                        <input type="radio" name="bandaTolerancia" [(ngModel)]="bandaTolerancia" value="0.1" id="tol_plata">
+                        <label for="tol_plata" class="color-label-control black-text" style="background-color: silver; margin-left: 5px;">Plata 10%</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button (click)="calcular()" class="btn btn-success" style="margin-right: 10px;" name="btnCalcular">
+                Calcular
+            </button>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-12">
+        <h2>Resultados</h2>
+        <table class="table table-responsive" style="border: 1px solid black;">
+            <thead style="background: #008080;">
+                <tr style="border: 1px solid black;">
+                    <th>Color 1</th>
+                    <th>Color 2</th>
+                    <th>Color 3</th>
+                    <th>Tolerancia</th>
+                    <th>Valor</th>
+                    <th>Valor máximo:</th>
+                    <th>Valor minimo:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td [bgColor]="colorBanda1"></td>
+                <td [bgColor]="colorBanda2"></td>
+                <td [bgColor]="colorBandaMulti"></td>
+                <td [bgColor]="colorBandaTolerancia"></td>
+                <td>{{valorResistencia}}</td>
+                <td>{{valorMax}}</td>
+                <td>{{valorMin}}</td>
+            </tbody>
+        </table>
+    </div>
+</div>

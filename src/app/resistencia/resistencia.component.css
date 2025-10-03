@@ -1,0 +1,144 @@
+    .color-band-container {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px; /* Espacio entre las 3 primeras bandas */
+        margin-bottom: 20px;
+    }
+
+    .color-band {
+        flex: 1;
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .band-header {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .color-row {
+        display: flex;
+        align-items: center;
+        height: 25px; /* Altura uniforme para filas */
+    }
+
+    .color-sample {
+        width: 60%;
+        height: 100%;
+        color: white; /* Texto predeterminado blanco para la muestra de color */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+
+    .band-value {
+        width: 20%;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .radio-circle {
+        width: 20%;
+        text-align: center;
+    }
+
+    .black-text {
+        color: black !important;
+    }
+
+    /* Estilos específicos para la banda de Tolerancia (Oro/Plata) */
+    .tolerance-band-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .tolerance-option {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+
+    .tolerance-color {
+        width: 100px;
+        height: 25px;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+    
+    /* Estilos para simular la tabla de resultados de la imagen (Columna izquierda) */
+    .result-table-simulation {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 20px;
+        font-size: 0.9em;
+    }
+
+    .result-table-simulation th, .result-table-simulation td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .result-table-simulation thead th {
+        background-color: #f0f0f0; /* Color de fondo para las cabeceras */
+        font-weight: bold;
+    }
+
+    .result-table-simulation tbody .color-cell {
+        height: 30px;
+        width: 14%; 
+    }
+    
+    .result-table-simulation .color-label {
+        background-color: #ffffff; 
+        font-weight: bold;
+    }
+
+    /* Estilos para la calculadora funcional (Columna derecha) */
+    .band-control-group {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .band-option {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+
+    .band-option input[type="radio"] {
+        margin-right: 8px;
+    }
+
+    .color-label-control {
+        flex-grow: 1;
+        padding: 3px 5px;
+        border-radius: 3px;
+        text-align: center;
+        color: white; /* Color de texto predeterminado */
+    }
+
+    .color-label-control.black-text {
+        color: black;
+    }
+
+    .tolerance-radio-option {
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+    }
+    

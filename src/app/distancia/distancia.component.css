@@ -1,0 +1,87 @@
+/*
+ * MODIFICACIONES PARA EL CENTRADO
+ */
+
+/* 1. Centrar el contenido de la página */
+:host { /* Esto aplica estilos al componente anfitrión */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    min-height: 100vh; /* Asegura que el componente ocupe toda la altura de la ventana */
+    width: 100%;
+}
+
+/* 2. Estilos para el contenedor principal (ahora centrado) */
+.main-container {
+    /* Manteniendo los estilos Flexbox para las secciones internas */
+    display: flex;
+    align-items: flex-start;
+    padding: 30px; /* Aumento el padding para que se vea como una 'tarjeta' centrada */
+    gap: 50px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd; /* Añadir un borde sutil para destacar el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    background-color: #fff; /* Fondo blanco */
+}
+
+/*
+ * RESTO DE ESTILOS (sin cambios, solo reorganizados)
+ */
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px; /* Incrementé el ancho para que se vea mejor */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group label {
+    font-weight: bold;
+    width: 40px; /* Ancho fijo para las etiquetas 'x1', 'y1', etc. */
+    text-align: right;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.calculate-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #e6e6e6; 
+    border: 1px solid #999; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.calculate-button:hover {
+    background-color: #d4d4d4; 
+}
+
+.result-section {
+    display: flex; 
+    align-items: center; 
+    /* Quitamos el height fijo para que se alinee mejor con el contenido del input-section */
+}
+
+.result-section p {
+    font-size: 1.4em; /* Un poco más grande para el resultado */
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    white-space: nowrap;
+}

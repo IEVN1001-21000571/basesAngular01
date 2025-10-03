@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { HeroesListComponent } from './heroes/heroes-list/heroes-list.component';
 import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
 import { OperasBasComponent } from './formularios/operas-bas/operas-bas.component';
+import { DistanciaComponent } from './distancia/distancia.component';
+import { ResistenciasModule } from './resistencia/resistencia.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesListComponent,
     CinepolisComponent,
-    OperasBasComponent
+    OperasBasComponent,
+    DistanciaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule // Esta es la línea clave que corrige el problema.
+    FormsModule,
+    ResistenciasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
